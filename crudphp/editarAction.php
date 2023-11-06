@@ -1,15 +1,11 @@
 <?php 
 require 'config.php';
 
-$id = filter_input(INPUT_POST, 'id');
-$nome = filter_input(INPUT_POST, 'nome');
-$preco = filter_input(INPUT_POST, 'preco');
-if($id && $nome && $preco) { 
+$idSneaker = filter_input(INPUT_POST, 'idSneaker');
+if($idSneaker) { 
 
-    $sql = $pdo->prepare("UPDATE produtos SET nome = :nome, preco = :preco WHERE id = :id");
-    $sql->bindValue(':nome', $nome);
-    $sql->bindValue(':preco', $preco);
-    $sql->bindValue(':id', $id);
+    $sql = $pdo->prepare("UPDATE produtos SET idSneaker = :idSneaker WHERE id = :id");
+    $sql->bindValue(':idSneaker', $idSneaker);
     $sql->execute();
 
 header ('location: listar.php');

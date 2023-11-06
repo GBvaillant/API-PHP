@@ -25,11 +25,8 @@ if($id) {
 
 <form method="post" action= "./editarAction.php">
     <input type="hidden" name="id" value="<?=$produto['id'];?>"/>
-    <label>
-    Nome: <input type="text" name="nome" value="<?=$produto['nome'];?>"/>
-    </label>
     <label> 
-    Preço: <input type="text" name="preco" value="<?=$produto['preco'];?>"/>
+    idSnekaer: <input type="text" name="idSneaker" value="<?=$produto['idSneaker'];?>"/>
     </label>
     <button type="submit">editar</button>
 

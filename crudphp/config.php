@@ -1,6 +1,6 @@
 <?php
 
-$db_name = 'phpcrud';
+$db_name = 'crudphp';
 $db_host = 'localhost';
 $db_user = 'root';
 $db_password = '';
@@ -20,5 +20,3 @@ $db_password = '';
 // } catch (PDOException $e) { 
 //     die("Erro na conexão com o banco: " .$e->getMessage());
 // }
-
-
