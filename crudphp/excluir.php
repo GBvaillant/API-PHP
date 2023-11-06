@@ -13,4 +13,3 @@ echo 'Produto excluido !! ';
 header ('location: listarFront.php');
 
 ?>
-

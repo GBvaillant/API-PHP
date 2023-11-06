@@ -3,7 +3,7 @@
 $db_name = 'crudphp';
 $db_host = 'localhost';
 $db_user = 'root';
-$db_password = '';
+$db_password = 'gv3155';
 
 // try {
     $pdo = new PDO("mysql:dbname=" . $db_name . ";host=" . $db_host, $db_user, $db_password);
